@@ -1,0 +1,17 @@
+C:\Users\leandroramirez\source\repos\logic-service\src\LogisticaApplication\bin\Debug\net8.0\xunit.abstractions.dll
+C:\Users\leandroramirez\source\repos\logic-service\src\LogisticaApplication\bin\Debug\net8.0\xunit.runner.visualstudio.testadapter.dll
+C:\Users\leandroramirez\source\repos\logic-service\src\LogisticaApplication\bin\Debug\net8.0\Logistica.Application.deps.json
+C:\Users\leandroramirez\source\repos\logic-service\src\LogisticaApplication\bin\Debug\net8.0\Logistica.Application.dll
+C:\Users\leandroramirez\source\repos\logic-service\src\LogisticaApplication\bin\Debug\net8.0\Logistica.Application.pdb
+C:\Users\leandroramirez\source\repos\logic-service\src\LogisticaApplication\bin\Debug\net8.0\Logistica.Domain.dll
+C:\Users\leandroramirez\source\repos\logic-service\src\LogisticaApplication\bin\Debug\net8.0\Logistica.Domain.pdb
+C:\Users\leandroramirez\source\repos\logic-service\src\LogisticaApplication\obj\Debug\net8.0\Logistica.Application.csproj.AssemblyReference.cache
+C:\Users\leandroramirez\source\repos\logic-service\src\LogisticaApplication\obj\Debug\net8.0\Logistica.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leandroramirez\source\repos\logic-service\src\LogisticaApplication\obj\Debug\net8.0\Logistica.Application.AssemblyInfoInputs.cache
+C:\Users\leandroramirez\source\repos\logic-service\src\LogisticaApplication\obj\Debug\net8.0\Logistica.Application.AssemblyInfo.cs
+C:\Users\leandroramirez\source\repos\logic-service\src\LogisticaApplication\obj\Debug\net8.0\Logistica.Application.csproj.CoreCompileInputs.cache
+C:\Users\leandroramirez\source\repos\logic-service\src\LogisticaApplication\obj\Debug\net8.0\Logistic.467E0787.Up2Date
+C:\Users\leandroramirez\source\repos\logic-service\src\LogisticaApplication\obj\Debug\net8.0\Logistica.Application.dll
+C:\Users\leandroramirez\source\repos\logic-service\src\LogisticaApplication\obj\Debug\net8.0\refint\Logistica.Application.dll
+C:\Users\leandroramirez\source\repos\logic-service\src\LogisticaApplication\obj\Debug\net8.0\Logistica.Application.pdb
+C:\Users\leandroramirez\source\repos\logic-service\src\LogisticaApplication\obj\Debug\net8.0\ref\Logistica.Application.dll

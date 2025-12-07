@@ -1,0 +1,29 @@
+
+services:
+  pgsql:
+    image: postgres:16
+    container_name: logistica-postgres
+    restart: always
+    environment:
+      POSTGRES_DB: logistica_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  logistica-api:
+    build:
+      context: .
+    container_name: logistica-api
+    depends_on:
+      - pgsql
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__logisticDatabase: "Host=pgsql;Port=5432;Database=logistica_db;Username=postgres;Password=postgres;"
+    ports:
+      - "5000:8080"
+
+volumes:
+  pgdata:

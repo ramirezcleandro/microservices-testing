@@ -1,0 +1,17 @@
+C:\Users\leandroramirez\source\repos\logic-service\src\LoginService.Domain\LoginService.Domain\bin\Debug\net8.0\xunit.abstractions.dll
+C:\Users\leandroramirez\source\repos\logic-service\src\LoginService.Domain\LoginService.Domain\bin\Debug\net8.0\xunit.runner.visualstudio.testadapter.dll
+C:\Users\leandroramirez\source\repos\logic-service\src\LoginService.Domain\LoginService.Domain\bin\Debug\net8.0\Logistica.Domain.deps.json
+C:\Users\leandroramirez\source\repos\logic-service\src\LoginService.Domain\LoginService.Domain\bin\Debug\net8.0\Logistica.Domain.runtimeconfig.json
+C:\Users\leandroramirez\source\repos\logic-service\src\LoginService.Domain\LoginService.Domain\bin\Debug\net8.0\Logistica.Domain.dll
+C:\Users\leandroramirez\source\repos\logic-service\src\LoginService.Domain\LoginService.Domain\bin\Debug\net8.0\Logistica.Domain.pdb
+C:\Users\leandroramirez\source\repos\logic-service\src\LoginService.Domain\LoginService.Domain\obj\Debug\net8.0\Logistica.Domain.csproj.AssemblyReference.cache
+C:\Users\leandroramirez\source\repos\logic-service\src\LoginService.Domain\LoginService.Domain\obj\Debug\net8.0\Logistica.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leandroramirez\source\repos\logic-service\src\LoginService.Domain\LoginService.Domain\obj\Debug\net8.0\Logistica.Domain.AssemblyInfoInputs.cache
+C:\Users\leandroramirez\source\repos\logic-service\src\LoginService.Domain\LoginService.Domain\obj\Debug\net8.0\Logistica.Domain.AssemblyInfo.cs
+C:\Users\leandroramirez\source\repos\logic-service\src\LoginService.Domain\LoginService.Domain\obj\Debug\net8.0\Logistica.Domain.csproj.CoreCompileInputs.cache
+C:\Users\leandroramirez\source\repos\logic-service\src\LoginService.Domain\LoginService.Domain\obj\Debug\net8.0\Logistica.Domain.sourcelink.json
+C:\Users\leandroramirez\source\repos\logic-service\src\LoginService.Domain\LoginService.Domain\obj\Debug\net8.0\Logistica.Domain.dll
+C:\Users\leandroramirez\source\repos\logic-service\src\LoginService.Domain\LoginService.Domain\obj\Debug\net8.0\refint\Logistica.Domain.dll
+C:\Users\leandroramirez\source\repos\logic-service\src\LoginService.Domain\LoginService.Domain\obj\Debug\net8.0\Logistica.Domain.pdb
+C:\Users\leandroramirez\source\repos\logic-service\src\LoginService.Domain\LoginService.Domain\obj\Debug\net8.0\Logistica.Domain.genruntimeconfig.cache
+C:\Users\leandroramirez\source\repos\logic-service\src\LoginService.Domain\LoginService.Domain\obj\Debug\net8.0\ref\Logistica.Domain.dll
