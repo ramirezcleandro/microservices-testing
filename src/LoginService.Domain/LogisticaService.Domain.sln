@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logistica.WebApi", "..\Logi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logistica.Application.Tests", "..\..\tests\Logistica.Application.Tests\Logistica.Application.Tests.csproj", "{872F95F5-9B79-C18F-85A8-D1955F6AF6AF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logistica.Application.IntegrationTests", "..\..\tests\Logistica.Application.IntegrationTests\Logistica.Application.IntegrationTests.csproj", "{20EB81D1-D6F6-4D9D-8AF6-220696ACB523}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{872F95F5-9B79-C18F-85A8-D1955F6AF6AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{872F95F5-9B79-C18F-85A8-D1955F6AF6AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{872F95F5-9B79-C18F-85A8-D1955F6AF6AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20EB81D1-D6F6-4D9D-8AF6-220696ACB523}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20EB81D1-D6F6-4D9D-8AF6-220696ACB523}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20EB81D1-D6F6-4D9D-8AF6-220696ACB523}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20EB81D1-D6F6-4D9D-8AF6-220696ACB523}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

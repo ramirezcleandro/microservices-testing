@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Logistica.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cf3367695e3fb0c6adb59c65e18ed820cd3bca0e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b432dad5710df7a00457e11b51d822dc91306b37")]
 [assembly: System.Reflection.AssemblyProductAttribute("Logistica.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Logistica.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
