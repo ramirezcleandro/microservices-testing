@@ -11,5 +11,7 @@ namespace Logistica.Application.RutaDistribucion.Queries.Common
         Task<DetalleRutaDto?> GetDetalleRutaAsync(Guid rutaId, CancellationToken ct);
         Task<ProgresoRutaDto?> GetProgresoRutaAsync(Guid rutaId, CancellationToken ct);
         //Task<List<RutaItemDto>> GetRutasPorPersonalYEstadoAsync(Guid personalId, string estado, CancellationToken ct);
+
+        Task<IReadOnlyList<RutaResumenDto>> ListarRutasAsync(CancellationToken ct);
     }
 }

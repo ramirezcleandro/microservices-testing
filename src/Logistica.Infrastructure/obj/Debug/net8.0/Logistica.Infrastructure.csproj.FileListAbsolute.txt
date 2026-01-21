@@ -19,3 +19,4 @@ C:\Users\leandroramirez\source\repos\logic-service\src\Logistica.Infrastructure\
 C:\Users\leandroramirez\source\repos\logic-service\src\Logistica.Infrastructure\obj\Debug\net8.0\ref\Logistica.Infrastructure.dll
 C:\Users\leandroramirez\source\repos\logic-service\src\Logistica.Infrastructure\bin\Debug\net8.0\xunit.abstractions.dll
 C:\Users\leandroramirez\source\repos\logic-service\src\Logistica.Infrastructure\bin\Debug\net8.0\xunit.runner.visualstudio.testadapter.dll
+C:\Users\leandroramirez\source\repos\logic-service\src\Logistica.Infrastructure\obj\Debug\net8.0\Logistica.Infrastructure.sourcelink.json

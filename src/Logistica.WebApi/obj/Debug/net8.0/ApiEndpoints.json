@@ -41,6 +41,22 @@
   },
   {
     "ContainingType": "Logistica.WebApi.Controllers.RutaDistribucionController",
+    "Method": "Listar",
+    "RelativePath": "api/RutaDistribucion",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Logistica.WebApi.Controllers.RutaDistribucionController",
     "Method": "AgregarPaquete",
     "RelativePath": "api/RutaDistribucion/{rutaId}/agregar-paquete",
     "HttpMethod": "POST",

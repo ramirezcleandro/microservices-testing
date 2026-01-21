@@ -15,3 +15,4 @@ C:\Users\leandroramirez\source\repos\logic-service\src\LogisticaApplication\obj\
 C:\Users\leandroramirez\source\repos\logic-service\src\LogisticaApplication\obj\Debug\net8.0\refint\Logistica.Application.dll
 C:\Users\leandroramirez\source\repos\logic-service\src\LogisticaApplication\obj\Debug\net8.0\Logistica.Application.pdb
 C:\Users\leandroramirez\source\repos\logic-service\src\LogisticaApplication\obj\Debug\net8.0\ref\Logistica.Application.dll
+C:\Users\leandroramirez\source\repos\logic-service\src\LogisticaApplication\obj\Debug\net8.0\Logistica.Application.sourcelink.json

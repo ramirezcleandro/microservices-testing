@@ -121,3 +121,4 @@ C:\Users\leandroramirez\source\repos\logic-service\tests\Logistica.Application.T
 C:\Users\leandroramirez\source\repos\logic-service\tests\Logistica.Application.Tests\obj\Debug\net8.0\Logistica.Application.Tests.pdb
 C:\Users\leandroramirez\source\repos\logic-service\tests\Logistica.Application.Tests\obj\Debug\net8.0\Logistica.Application.Tests.genruntimeconfig.cache
 C:\Users\leandroramirez\source\repos\logic-service\tests\Logistica.Application.Tests\obj\Debug\net8.0\ref\Logistica.Application.Tests.dll
+C:\Users\leandroramirez\source\repos\logic-service\tests\Logistica.Application.Tests\obj\Debug\net8.0\Logistica.Application.Tests.sourcelink.json

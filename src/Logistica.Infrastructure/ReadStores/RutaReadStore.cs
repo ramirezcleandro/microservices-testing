@@ -3,6 +3,7 @@ using Logistica.Application.RutaDistribucion.Queries.Common;
 using Logistica.Infrastructure.Persistence.DomainModel;
 using LogisticaService.Domain.Events;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 
 namespace Logistica.Infrastructure.ReadStores
@@ -94,5 +95,23 @@ namespace Logistica.Infrastructure.ReadStores
                     .ToList()
             );
         }
+
+        public async Task<IReadOnlyList<RutaResumenDto>> ListarRutasAsync(CancellationToken ct = default)
+        {
+            return await _db.RutasDistribucion
+                .AsNoTracking()
+                .OrderByDescending(r => r.Fecha)
+                .Select(r => new RutaResumenDto(
+                    r.Id,
+                    r.Fecha,
+                    r.EstadoRuta.ToString(),
+                    r.AlmacenUbicacion.DireccionCompleta
+                ))
+                .ToListAsync(ct);
+        }
+
     }
+
+
+
 }

@@ -3,6 +3,15 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.ListenAnyIP(7018); // HTTP → Pact
+    options.ListenAnyIP(7019, listenOptions =>
+    {
+        listenOptions.UseHttps(); // HTTPS → Swagger / normal
+    });
+});
+
 // Add services to the container.
 
 builder.Services.AddInfrastructure(builder.Configuration);
@@ -17,6 +26,19 @@ builder.Configuration
     .AddEnvironmentVariables();
 builder.Services.AddControllers();
 builder.Services.AddAuthorization();
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowReact",
+        policy =>
+        {
+            policy
+                .WithOrigins("http://localhost:5173")
+                .AllowAnyHeader()
+                .AllowAnyMethod();
+        });
+});
+
 
 var app = builder.Build();
 using (var scope = app.Services.CreateScope())
@@ -47,7 +69,13 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
+if (!app.Environment.IsDevelopment())
+{
+    app.UseHttpsRedirection();
+}
+
+app.UseCors("AllowReact");
 
 app.UseAuthorization();
 

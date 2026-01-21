@@ -4,6 +4,7 @@ using Logistica.Application.RutaDistribucion.IniciarRuta;
 using Logistica.Application.RutaDistribucion.MarcarPuntoEntregado;
 using Logistica.Application.RutaDistribucion.OptimizarRuta;
 using Logistica.Application.RutaDistribucion.Queries.GetProgresoRuta;
+using Logistica.Application.RutaDistribucion.Queries.ListarRutas;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -33,6 +34,24 @@ namespace Logistica.WebApi.Controllers
                     Mensaje = result.Error.Description
                 };
                 return BadRequest(errorResponse);
+            }
+
+            return Ok(result.Value);
+        }
+
+        [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public async Task<IActionResult> Listar()
+        {
+            var result = await _mediator.Send(new ListarRutasQuery());
+
+            if (result.IsFailure)
+            {
+                return BadRequest(new
+                {
+                    Error = result.Error.Code,
+                    Mensaje = result.Error.Description
+                });
             }
 
             return Ok(result.Value);

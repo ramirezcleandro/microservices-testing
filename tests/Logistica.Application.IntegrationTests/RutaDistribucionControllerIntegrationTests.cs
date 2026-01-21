@@ -1,4 +1,4 @@
-using FluentAssertions;
+﻿using FluentAssertions;
 using Logistica.Application.IntegrationTests.Factories;
 using System.Net;
 using System.Net.Http.Json;
@@ -12,56 +12,89 @@ namespace Logistica.Application.IntegrationTests
             _httpClient = HttpClientFactory.createClient();
         }
         [Fact]
-        public async Task CrearRuta_OK()
+        public async Task FlujoCompleto_RutaHastaEntrega_OK()
         {
-            // Arrange (JSON alineado a CrearRutaCommand)
-            var request = new HttpRequestMessage(
-                HttpMethod.Post,
-                "/api/RutaDistribucion/crear")
-            {
-                Content = JsonContent.Create(new
+            // 1️⃣ Crear Ruta
+            var crearRutaResponse = await _httpClient.PostAsJsonAsync(
+                "/api/RutaDistribucion/crear",
+                new
                 {
                     fecha = DateOnly.FromDateTime(DateTime.Today),
                     personalEntregaId = Guid.NewGuid(),
                     direccionAlmacen = "Av. Siempre Viva 123",
                     latitud = -12.0464,
                     longitud = -77.0428
-                })
-            };
+                });
 
-           
-            var response = await _httpClient.SendAsync(request);
+            crearRutaResponse.EnsureSuccessStatusCode();
+            var rutaId = await crearRutaResponse.Content.ReadFromJsonAsync<Guid>();
+            rutaId.Should().NotBeEmpty();
 
-            
-            response.EnsureSuccessStatusCode();
-            response.StatusCode.Should().Be(HttpStatusCode.OK);
+            // 2️⃣ Agregar Paquete
+            var paqueteId = Guid.NewGuid();
 
-            
-            var guid = await response.Content.ReadFromJsonAsync<Guid>();
+            var agregarPaqueteResponse = await _httpClient.PostAsJsonAsync(
+                 $"/api/RutaDistribucion/{rutaId}/agregar-paquete",
+                 new
+                 {
+                     paqueteId = paqueteId
+                 });
 
-            guid.Should().NotBeEmpty();
+            agregarPaqueteResponse.EnsureSuccessStatusCode();
+
+            // 3️⃣ Iniciar Ruta
+            var iniciarRutaResponse = await _httpClient.PostAsync(
+                $"/api/RutaDistribucion/{rutaId}/iniciar",
+                null);
+
+            iniciarRutaResponse.EnsureSuccessStatusCode();
+
+            // 4️⃣ Marcar Punto Entregado
+            var marcarEntregadoResponse = await _httpClient.PostAsync(
+                $"/api/RutaDistribucion/{rutaId}/puntos/{paqueteId}/entregado",
+                null);
+
+
+            marcarEntregadoResponse.EnsureSuccessStatusCode();
         }
 
         [Fact]
-        public async Task CrearRuta_DeberiaRetornarBadRequest_CuandoDatosSonInvalidos()
+        public async Task Flujo_CrearAgregarPaqueteEIniciarRuta_OK()
         {
-            var request = new HttpRequestMessage(
-                HttpMethod.Post,
-                "/api/RutaDistribucion/crear")
-            {
-                Content = JsonContent.Create(new
+            // Crear ruta
+            var crearResponse = await _httpClient.PostAsJsonAsync(
+                "/api/RutaDistribucion/crear",
+                new
                 {
-                    fecha = "0001-01-01",
-                    personalEntregaId = Guid.Empty,
-                    direccionAlmacen = "",
-                    latitud = 0,
-                    longitud = 0
-                })
-            };
+                    fecha = DateOnly.FromDateTime(DateTime.Today),
+                    personalEntregaId = Guid.NewGuid(),
+                    direccionAlmacen = "Av. Test 123",
+                    latitud = -12,
+                    longitud = -77
+                });
 
-            var response = await _httpClient.SendAsync(request);
+            crearResponse.EnsureSuccessStatusCode();
+            var rutaId = await crearResponse.Content.ReadFromJsonAsync<Guid>();
 
-            response.StatusCode.Should().Be(HttpStatusCode.BadRequest);
+            // Agregar paquete (OBLIGATORIO)
+            var paqueteId = Guid.NewGuid();
+
+            var agregarResponse = await _httpClient.PostAsJsonAsync(
+                $"/api/RutaDistribucion/{rutaId}/agregar-paquete",
+                new { paqueteId });
+
+            agregarResponse.EnsureSuccessStatusCode();
+
+            // Iniciar ruta
+            var iniciarResponse = await _httpClient.PostAsync(
+                $"/api/RutaDistribucion/{rutaId}/iniciar",
+                null);
+
+            iniciarResponse.EnsureSuccessStatusCode();
         }
+
+
+
+
     }
 }

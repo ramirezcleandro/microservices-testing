@@ -244,7 +244,6 @@ C:\Users\leandroramirez\source\repos\logic-service\src\Logistica.WebApi\obj\Debu
 C:\Users\leandroramirez\source\repos\logic-service\src\Logistica.WebApi\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\leandroramirez\source\repos\logic-service\src\Logistica.WebApi\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\leandroramirez\source\repos\logic-service\src\Logistica.WebApi\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\leandroramirez\source\repos\logic-service\src\Logistica.WebApi\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\leandroramirez\source\repos\logic-service\src\Logistica.WebApi\obj\Debug\net8.0\Logistic.AE1A2CD7.Up2Date
 C:\Users\leandroramirez\source\repos\logic-service\src\Logistica.WebApi\obj\Debug\net8.0\Logistica.WebApi.dll
 C:\Users\leandroramirez\source\repos\logic-service\src\Logistica.WebApi\obj\Debug\net8.0\refint\Logistica.WebApi.dll
@@ -258,3 +257,4 @@ C:\Users\leandroramirez\source\repos\logic-service\src\Logistica.WebApi\bin\Debu
 C:\Users\leandroramirez\source\repos\logic-service\src\Logistica.WebApi\bin\Debug\net8.0\xunit.assert.dll
 C:\Users\leandroramirez\source\repos\logic-service\src\Logistica.WebApi\bin\Debug\net8.0\xunit.core.dll
 C:\Users\leandroramirez\source\repos\logic-service\src\Logistica.WebApi\bin\Debug\net8.0\xunit.execution.dotnet.dll
+C:\Users\leandroramirez\source\repos\logic-service\src\Logistica.WebApi\obj\Debug\net8.0\Logistica.WebApi.sourcelink.json

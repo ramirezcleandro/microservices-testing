@@ -107,6 +107,18 @@
         }
       }
     },
+    "/api/RutaDistribucion": {
+      "get": {
+        "tags": [
+          "RutaDistribucion"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/RutaDistribucion/{rutaId}/iniciar": {
       "post": {
         "tags": [

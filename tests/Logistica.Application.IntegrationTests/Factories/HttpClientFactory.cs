@@ -11,7 +11,7 @@ namespace Logistica.Application.IntegrationTests.Factories
     {
         public static HttpClient createClient() {
             var client = new HttpClient();
-            client.BaseAddress = new Uri("http://localhost");
+            client.BaseAddress = new Uri("http://localhost:5000");
             return client;
         }
     }

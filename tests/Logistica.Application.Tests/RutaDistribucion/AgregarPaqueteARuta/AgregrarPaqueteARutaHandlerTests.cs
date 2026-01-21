@@ -4,11 +4,6 @@ using LogisticaService.Domain.Agregados;
 using LogisticaService.Domain.Repositories;
 using LogisticaService.Domain.ValueObjects;
 using Moq;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Logistica.Application.Tests.RutaDistribucion.AgregarPaqueteARuta
 {

@@ -34,4 +34,11 @@
     );
     public record PuntoEstadoDto(Guid PuntoId, Guid PaqueteId, int Secuencia, string Estado);
 
+    public record RutaResumenDto(
+        Guid RutaId,
+        DateOnly Fecha,
+        string Estado,
+        string DireccionAlmacen
+    );
+
 }
